@@ -1,0 +1,231 @@
+/* Reset & Base */ /*there are few AI assisted codes in this files that helped me to understand better*/
+* { margin:0; 
+    padding:0; 
+    box-sizing:border-box; 
+}
+body { 
+    font-family: 'Cormorant Garamond', serif; 
+    background: #fff8f0; 
+    color: #333; }
+
+/* Progress Bar */
+#progress-bar { 
+    position: fixed; 
+    top:0; 
+    left:0; 
+    width:0%; 
+    height:6px; 
+    background: linear-gradient(90deg,#a8edea,#fed6e3);
+     z-index:100; 
+}
+
+/* Header */
+header { 
+    text-align:center; 
+    padding:2rem; 
+    background: linear-gradient(to right,#ffd1dc,#ffe5d9); 
+    color:#333; 
+}
+header h1 { 
+    font-size:3rem; 
+    animation:fadeInDown 1s ease-in-out; 
+}
+header p { 
+    font-size:1.2rem; 
+    margin-top:0.5rem; 
+}
+h2 {
+    text-align:center; 
+    color: darksalmon;
+}
+
+/* Slideshow */
+.slideshow-container { 
+    position:relative; 
+    max-width:800px; 
+    margin:2rem auto; 
+    border-radius:15px; 
+    overflow:hidden; 
+    box-shadow:0 8px 20px rgba(0,0,0,0.1);
+}
+.slide { 
+    display:none; 
+    position:relative; 
+}
+.slide img { 
+    width:100%; 
+    display:block; 
+}
+.slide-text { 
+    position:absolute; 
+    bottom:15%; 
+    left:50%; 
+    transform:translateX(-50%); 
+    color:#fff; 
+    font-size:1.8rem; 
+    background: rgba(0,0,0,0.3); 
+    padding:0.5rem 1rem; 
+    border-radius:10px; 
+}
+.prev, .next { 
+    cursor:pointer; 
+    position:absolute; 
+    top:50%; 
+    padding:0.8rem; 
+    color:white; 
+    font-size:2rem; 
+    border-radius:50%; 
+    background:rgba(0,0,0,0.3); 
+    user-select:none; 
+    transform:translateY(-50%); 
+}
+.prev:hover, .next:hover { 
+    background:rgba(0,0,0,0.6); 
+}
+.prev { 
+    left:10px; 
+} 
+.next { 
+    right:10px; 
+}
+
+/* Scenery Gallery */
+.additional-photos {
+  margin: 3rem auto;
+  text-align: center;
+}
+.additional-photos h2 {
+  margin-bottom: 1.5rem;
+  color:darksalmon;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 15px;
+  max-width: 900px;
+  margin: auto;
+}
+.gallery img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+.gallery img:hover {
+  transform: scale(1.2);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+  z-index: 2;
+}
+
+/* Profile Card */ 
+.profile-card { 
+    background:#fff0f5; 
+    text-align:center; 
+    width:250px; 
+    margin:2rem auto; 
+    padding:1.5rem; 
+    border-radius:15px; 
+    box-shadow:0 8px 15px rgba(0,0,0,0.1);
+} 
+.profile-card img { 
+    width:100px; 
+    height:100px; 
+    border-radius:50%; 
+    object-fit:cover; 
+} 
+.profile-card h2 { 
+    margin:1rem 0 0.5rem; 
+} 
+.profile-card h2 {
+    color:#333
+}
+.profile-card p { 
+    font-size:0.9rem; 
+    color:#666; 
+}
+
+/* Collapsible */
+.collapsible-section { 
+    max-width:800px; 
+    margin:2rem auto; 
+}
+.collapsible { 
+    background:#ffd1dc; 
+    color:#333; 
+    cursor:pointer;
+    padding:1rem; 
+    width:100%; 
+    border:none; 
+    border-radius:10px; 
+    text-align:left; 
+    font-size:1.2rem; 
+    margin-bottom:0.5rem; 
+    transition: background 0.3s; 
+}
+.collapsible:hover, .collapsible.active { 
+    background:#ffe5d9; 
+}
+.content { 
+    max-height:0; 
+    overflow:hidden; 
+    transition:max-height 0.5s ease-out, padding 0.3s ease; 
+    background:#fff0f5; 
+    padding:0 1rem; 
+    border-radius:0 0 10px 10px; 
+}
+.content.show { 
+    padding:1rem; 
+}
+
+/* Form on Image */
+.form-section { 
+    position:relative; 
+    margin:3rem 0; 
+    text-align:center; 
+}
+.form-section img { 
+    width:100%; 
+    display:block; 
+    filter:brightness(70%); 
+    border-radius:15px; 
+}
+.form-section form { 
+    position:absolute; 
+    top:50%; 
+    left:50%; 
+    transform:translate(-50%,-50%); 
+    width:90%; max-width:500px; 
+    background:rgba(255,255,255,0.85); 
+    padding:2rem; 
+    border-radius:15px; 
+    box-shadow:0 8px 20px rgba(0,0,0,0.2);
+}
+.form-section input, .form-section textarea { 
+    width:100%; 
+    padding:0.8rem; 
+    margin:0.5rem 0; 
+    border:1px solid #ccc; 
+    border-radius:10px; 
+}
+.form-section button { 
+    background:#ffd1dc; 
+    border:none; 
+    padding:0.8rem 2rem;
+    border-radius:10px; 
+    font-size:1rem; 
+    cursor:pointer; 
+    margin-top:0.5rem; 
+    transition:background 0.3s;
+}
+.form-section button:hover { 
+    background:#ffe5d9; 
+}
+.form-section h2 {
+    color:#333
+}
+
+/* Animations */
+@keyframes fade { from {opacity:0.4} to {opacity:1} }
+@keyframes fadeInDown { from {opacity:0; transform:translateY(-20px);} to {opacity:1; transform:translateY(0);} }

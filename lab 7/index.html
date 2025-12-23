@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Travel Diary</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Progress Bar -->
+  <div id="progress-bar"></div>
+
+  <!-- Header -->
+  <header>
+    <h1>🌸 Sofea's Seoul Diary 🌸</h1>
+    <p>Exploring Korea (mainly Seoul city)!</p>
+  </header>
+
+  <h2> I went to Seoul last Spring! <br> I am happy to share with you 
+    guys fun & beautiful must visit places in Seoul, South Korea </h2>
+
+  <!-- Slideshow -->
+  <section class="slideshow-container">
+    <div class="slide fade">
+      <img src="https://i0.wp.com/thewanderingwhittens.com/wp-content/uploads/2024/08/Hongdae7-rotated.jpg?resize=1024%2C1536&ssl=1" alt="Hongdae">
+      <div class="slide-text">Hongdae Street</div>
+    </div>
+    <div class="slide fade">
+      <img src="https://www.agoda.com/wp-content/uploads/2024/08/Namsan-Tower-during-autumn-in-Seoul-South-Korea-1244x700.jpg" alt="Namsan">
+      <div class="slide-text">Namsan Tower</div>
+    </div>
+    <div class="slide fade">
+      <img src="https://southkoreahallyu.com/wp-content/uploads/2025/08/bukchon-3-1024x684.jpg"alt="Hanok-Village">
+      <div class="slide-text">Hanok Village</div>
+    </div>
+    <div class="slide fade">
+      <img src="https://blog.trazy.com/wp-content/uploads/2025/07/Hangang-River-blog-thumbnail-scaled.png" alt="Han-River">
+      <div class="slide-text">Han River</div>
+    </div>
+    <div class="slide fade">
+      <img src="https://royal.cha.go.kr/resource/templete/royal/img/sub/intro/img_intro_gbg.png" alt="Gyeongbokgung">
+      <div class="slide-text">Gyeongbokgung Palace</div>
+    </div>
+
+    <br><br>
+    <h4>In Seoul, you can savor halal versions of Korean favorites such as 
+      bibimbap, bulgogi, Korean fried chicken, and spicy 
+      tteokbokki — all prepared with halal-certified ingredients. (other must try options: Kimchi Jigae, Hotteok, & Bingsu) </h4>
+    <br>
+    <h4> Psst! to all the girlies, don't forget to visit Olive Young!
+      They have a lot of skincare and high-end makeup products!
+
+    </h4>
+
+    <section class="additional-photos">
+     <h2> Quick captures by the road </h2> 
+      <div class="gallery">
+        <img src="seoul1.jpg" alt="pic1">
+        <img src="seoul2.jpg" alt="pic2">
+        <img src="seoul3.jpg" alt="pic3">
+        <img src="seoul4.jpg" alt="pic4">
+      </div>
+    </section>
+
+    <!-- Navigation Arrows -->
+    <a class="prev" onclick="changeSlide(-1)">❮</a>
+    <a class="next" onclick="changeSlide(1)">❯</a>
+  </section>
+
+  <!-- Profile Card -->
+  <section class="profile-card">
+    <img src="diena.jpg" alt="Profile">
+    <h2>Sofea</h2>
+    <p>A Young Solo Traveller</p>
+  </section>
+
+
+  <!-- Collapsible Sections -->
+  <section class="collapsible-section">
+    <h1> These are the other countries I've visited so far! </h1>
+    <button class="collapsible">Asia Adventures</button>
+    <div class="content">
+      <p>Visited Japan, Thailand, and Vietnam. Amazing cultures and foods!</p>
+    </div>
+    <br>
+    <button class="collapsible">Europe Journeys</button>
+    <div class="content">
+      <p>From Italy to Norway, every country had its charm.</p>
+    </div>
+    <br>
+    <button class="collapsible">America Roadtrips</button>
+    <div class="content">
+      <p>USA and Canada roadtrips were full of breathtaking landscapes.</p>
+    </div>
+  </section>
+
+  <!-- Form on Image -->
+  <section class="form-section">
+    <img src="https://english.seoul.go.kr/wp-content/uploads/2023/03/spring-seoul2-2023.jpg" alt="Contact Background">
+    <form>
+      <h2>Contact Me</h2>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
