@@ -1,0 +1,50 @@
+/* General body font */
+body {
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.hero {
+  background: linear-gradient(to right, #2d4651, #737477); /* gradient background */
+  color: white;         /* text color */
+  padding: 5rem 0;      
+  text-align: center;   /* center text */
+}
+
+.btn-custom {
+  background-color: #344145; 
+  border-color: #344145;
+  color: white;              
+}
+
+.btn-custom:hover {
+  background-color: #283134; 
+  border-color: #283134;
+}
+
+.btn-outline {
+  background-color: #344145; 
+  border-color: #344145;
+  color: white; 
+}
+
+.btn-outline:hover {
+  background-color: #283134; 
+  border-color: #283134;
+  color: white;
+}
+
+/* About page image */
+.about-image {
+  border-radius: 0.5rem;
+}
+
+/* Card hover effect */
+.card:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
+/* Form styling */
+#contactForm button {
+  width: 100%;
+}
